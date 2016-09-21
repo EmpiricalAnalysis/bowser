@@ -107,7 +107,7 @@ module Bowser
       end
 
       def success location
-        @events[:success].each { |callback| callback.call location }
+        @events[:location].each { |callback| callback.call location }
       end
 
       def error error
